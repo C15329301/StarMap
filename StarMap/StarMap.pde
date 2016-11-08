@@ -1,16 +1,23 @@
 /*  @Tom Kearney (C15329301) DT228/2
     StarMap - Lab Test OOP 2016
                             */
-public ArrayList<Star> Str = new ArrayList<Star>();
+public ArrayList<Star> StarArray = new ArrayList<Star>();
 Table table;
 void setup()
 {
   size(800,800);
   loadData();
 }
+int per = width/16;
 void draw()
 {
-
+    /*where graphing 
+    for(int i=0; i<10; i++);
+    {
+     
+    }*/
+      
+      
 }
 
 void loadData() {
@@ -21,8 +28,11 @@ void loadData() {
       
     }
  
-void printStars() {
-    point(Xy, Yg);
-    
+/*void printStars() 
+{
+    point(Xg, Yg);
+
+}
+*/
     
 }

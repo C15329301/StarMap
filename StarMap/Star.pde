@@ -1,18 +1,20 @@
-public class Star 
+class Star 
 {
-  for (int i = 0; i < table.getRowCount(); i++)
+  int yPer = 50;
+  int xPer = 50;
+  int z = table.getRowCount();
+  int i;
+
+  for(int i=0; i<z; i++)
   {
-    TableRow row = table.getRow(i);
-  }
-  for (TableRow row : table.rows())
-  {
-    
-    String DisplayName = row.getFloat("DisplayName");
-    float Distance = row.getFloat("Distance");
-    float Xg = row.getFloat("Xg");
-    float Yg = row.getFloat("Yg");
-    float Zg = row.getFloat("Zg");
-    float AM = row.getFloat("AbsMag");
-    
+    float Hab = getFloat("i, 2");
+    String DisplayName = getString("i, 3");
+    float Distance = getFloat("i, 12");
+    float Xg = getFloat("i, 13");
+    float Yg = getFloat("i, 14");
+    float Zg = getFloat("i, 15");
+    float AM = getFloat("i, 16");
+    point(Xg + xPer, Yg + yPer);
+   
   }
 }
